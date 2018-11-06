@@ -2,7 +2,7 @@ describe('FizzBuzz', function() {
   var fizzBuzz;
 
   beforeEach(function() {
-    fizzBuzz = new fizzBuzz()
+    fizzBuzz = new FizzBuzz();
   });
 
   describe('divisible by 3', function() {
@@ -24,6 +24,19 @@ describe('FizzBuzz', function() {
       expect(fizzBuzz.num(25)).toEqual('Buzz');
     });
   });
-  
+
+  describe('divisible by 3 and 5', function() {
+    it('returns fizzbuzz for 15', function() {
+      expect(fizzBuzz.num(15)).toEqual('FizzBuzz')
+    });
+
+    it('returns fizzbuzz for 90', function() {
+      expect(fizzBuzz.num(90)).toEqual('FizzBuzz')
+    });
+  });
+
+
+
+
 
 });
