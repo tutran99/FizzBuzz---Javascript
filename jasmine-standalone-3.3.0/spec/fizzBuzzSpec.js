@@ -27,16 +27,21 @@ describe('FizzBuzz', function() {
 
   describe('divisible by 3 and 5', function() {
     it('returns fizzbuzz for 15', function() {
-      expect(fizzBuzz.num(15)).toEqual('FizzBuzz')
+      expect(fizzBuzz.num(15)).toEqual('FizzBuzz');
     });
 
     it('returns fizzbuzz for 90', function() {
-      expect(fizzBuzz.num(90)).toEqual('FizzBuzz')
+      expect(fizzBuzz.num(90)).toEqual('FizzBuzz');
     });
   });
 
+  describe('any other number', function() {
+    it('2 returns 2', function () {
+      expect(fizzBuzz.num(2)).toEqual(2);
+    });
 
-
-
-
+    it('34 returns 34', function() {
+      expect(fizzBuzz.num(34)).toEqual(34);
+    });
+  });
 });
